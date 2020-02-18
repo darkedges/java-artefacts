@@ -1,7 +1,7 @@
 FROM openjdk:8-jre
 MAINTAINER Data61 <cdr-data61@csiro.au>
 
-EXPOSE 8080/tcp
+EXPOSE 8383/tcp
 
 ADD payloads /payloads
 ARG JAR_FILE

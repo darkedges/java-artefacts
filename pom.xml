@@ -62,7 +62,16 @@
         <commons-validator.version>1.6</commons-validator.version>
         <commons-codec.version>1.13</commons-codec.version>
         <bouncy-castle.version>1.64</bouncy-castle.version>
+        <jansi.version>1.18</jansi.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.fusesource.jansi</groupId>
+            <artifactId>jansi</artifactId>
+            <version>${jansi.version}</version>
+        </dependency>
+    </dependencies>
 
     <modules>
         <module>api-model</module>

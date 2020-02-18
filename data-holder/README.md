@@ -8,3 +8,11 @@ We have added OR Mapping and JPA support with H2 as database, in order to demons
 an end-to-end implementation of the API endpoints.
 
 We have also added HTTP header processing according to [the HTTP header spec](https://consumerdatastandardsaustralia.github.io/standards/#http-headers)
+
+
+## Kubernetes
+
+```bash
+kubectl create secret generic dataholder-jks --from-file=./keystore/keystore.jks --from-file=./keystore/truststore.jks -n cdr
+kubectl apply -f dataholder.k8s.yaml
+```
